@@ -13,7 +13,7 @@ html, body{
 @font-face {
     font-family: 'a_antiquetituldcfrregular';
     src: 
-         url('5631-webfont.woff') format('woff');
+         url('./img/5631-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
