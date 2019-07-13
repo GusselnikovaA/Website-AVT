@@ -28,25 +28,28 @@ html, body{
 }
 
 header{
-	min-height: 593px;
+	min-height: 592px;
 	background-image: url(/img/header.png);
 	background-size: cover;
-	opacity: 0.7;
-	font-family: a_antiquetituldcfrregular;
-	text-align: center;
-	box-shadow: 0 0 8px 3px;
-	color: black;
-	/*a_AntiqueTitulDcFr*/
+	color: #fefefe;
+	font-family: "Myriad Pro - Cond";
 }
 
 .name{
 	font-size: 85px;
 	padding-top: 80px;
+	text-align: left;
 }
 
 .phone{
 	font-size: 40px;
 	padding-top: 40px;
+	text-align: right;
+	font-size: 48px;
+	width: 152px;
+	height: 33px;
+	font-weight: 400;
+
 }
 
 h1{
