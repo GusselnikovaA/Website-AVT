@@ -13,7 +13,7 @@ html, body{
 @font-face {
     font-family: 'a_antiquetituldcfrregular';
     src: 
-         url('5631-webfont.woff') format('woff');
+         url('/fonts/5631-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -24,12 +24,12 @@ html, body{
   font-weight: 400;
   src:
     local("Roboto-Regular"),
-    url("roboto.woff") format("woff");
+    url("/fonts/roboto.woff") format("woff");
 }
 
 header{
 	min-height: 593px;
-	background-image: url(456.jpg);
+	background-image: url(/img/456.jpg);
 	background-size: cover;
 	opacity: 0.7;
 	font-family: a_antiquetituldcfrregular;
