@@ -1,0 +1,35 @@
+.data 
+  &-content
+    display: flex
+    justify-content: space-between
+    max-width: 80%
+    margin: auto
+  &-info 
+    width: 180px
+    height: 180px
+    text-align: center 
+    border-radius: 50%
+    display: flex
+    align-items: center
+    justify-content: center
+    color: $light-color
+    box-shadow: 5px 5px 15px lighten($text-color, 20%)
+    &:first-child
+      border: 5px solid saturate($secondary-color, 20%)
+      background-color: saturate($secondary-color, 20%)
+    &:nth-child(2)
+      border: 5px solid $main-color
+      background-color: $main-color
+    &:nth-child(3)
+      border: 5px solid $secondary-color
+      background-color: $secondary-color
+    &:nth-child(4)
+      border: 5px solid lighten($main-color, 8%)
+      background-color: lighten($main-color, 8%)
+  &__text 
+    max-width: 140px
+    line-height: 1.4
+    text-shadow: 2px 2px 2px $text-color
+  &_main 
+    display: inline-block
+    padding-top: 10px
