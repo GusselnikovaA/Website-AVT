@@ -520,6 +520,19 @@ img {
   padding-top: 10px;
 }
 
+.premises-slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.premises-slider__item {
+  outline: none;
+}
+
 .premises-card {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -528,5 +541,18 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.premises__subtitle {
+  font-size: 18px;
+  color: #02a2d0;
+  text-transform: uppercase;
+}
+
+.premises__text {
+  text-align: center;
 }
 /*# sourceMappingURL=style.css.map */

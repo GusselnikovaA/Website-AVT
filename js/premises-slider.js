@@ -1,14 +1,12 @@
-// Скрипт слайдера
+// СЛАЙДЕР В БЛОКЕ PREMISES
 $(document).ready(function () {
-  // СЛАЙДЕР В БЛОКЕ PREMISES
   $('.premises-slider').slick({
-        slidesToShow: 4,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 3000,
-        infinite: true,
-        speed: 2000,
-        arrows: true,
+        slidesToShow: 1,
+        slidesToScroll: 1
+        // autoplay: true,
+        // autoplaySpeed: 3000,
+        // infinite: true,
+        // speed: 2000,
         // prevArrow: $('.hero-arrows__left'),
         // nextArrow: $('.hero-arrows__right'),
         // responsive: [{
@@ -23,4 +21,4 @@ $(document).ready(function () {
         //   }
         // ]
       });
-})
+});
