@@ -1,6 +1,6 @@
 // СЛАЙДЕР В БЛОКЕ PREMISES
 $(document).ready(function () {
-  $('.premises-slider').slick({
+  $('.premises-slide').slick({
         slidesToShow: 1,
         slidesToScroll: 1
         // autoplay: true,

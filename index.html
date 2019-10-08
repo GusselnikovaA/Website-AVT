@@ -14,9 +14,9 @@
 
 <body>
 
-	<header class="header">
+	<header class="header header-background">
 		<div class="container header-container">
-			<div class="header-wrap header-background">
+			<div class="header-wrap">
 				<div class="header-navbar">
 					<ul class="header-list">
 						<li class="header-list__item">
@@ -47,7 +47,7 @@
 			<div class="container">
 				<div class="title about__title">О компании</div>
 				<div class="about-content">
-					<p class="about__text"> <span class="text_bold">АВТ Альянс Финанс</span>- это компания давно и качественно
+					<p class="about__text"> <span class="text_bold">АВТ Альянс Финанс</span> - это компания давно и качественно
 						работающая в сфере коммерческой недвижимости
 						Санкт-Петербурга.
 					</p>
@@ -98,18 +98,18 @@
 
 		<section class="section premises">
 			<div class="container">
-				<div class="title premises__title">НАШИ ОБЪЕКТЫ</div>
+				<h2 class="title premises__title">НАШИ ОБЪЕКТЫ</h2>
 				<div class="premises-slider">
 					<div class="premises-slider__item">
-						<div class="premises-card">
 							<div class="premises__image">
 								<img src="img/premises/cover_arenda.jpg" alt="Обложка помещения">
 							</div>
-							<span class="premises__subtitle">склад</span>
-							<p class="premises__text">г. Санкт-Петербург <br>
-								Цена: <span class="text_bold">30 000 руб.</span></p>
-						</div>
-						<!-- /.premises-card -->
+					</div>
+					<!-- /.premises-slider__item -->
+					<div class="premises-slider__item">
+							<div class="premises__image">
+								<img src="img/premises/cover_arenda.jpg" alt="Обложка помещения">
+							</div>
 					</div>
 					<!-- /.premises-slider__item -->
 				</div>
@@ -117,8 +117,61 @@
 			</div>
 			<!-- /.container -->
 		</section>
-		<!-- /.slider -->
+		<!-- /.premises -->
 	</main>
+
+	<footer class="footer">
+		<div class="container">
+			<nav class="footer-nav">
+				<ul class="footer-list">
+					<li class="footer-list__item">
+						<a href="#">главная</a>
+					</li>
+					<!-- /.footer-list__item -->
+					<li class="footer-list__item">
+						<a href="#">услуги</a>
+					</li>
+					<!-- /.footer-list__item -->
+					<li class="footer-list__item">
+						<a href="#">каталог аренды</a>
+					</li>
+					<!-- /.footer-list__item -->
+					<li class="footer-list__item">
+						<a href="#">контакты</a>
+					</li>
+					<!-- /.footer-list__item -->
+				</ul>
+				<!-- /.footer-list -->
+			</nav>
+			<!-- /.footer-nav -->
+			<div class="footer-content">
+				<div class="footer-address">
+					<p class="footer__address">г. Санкт-Петербург<br>
+							ул. Бассейная, дом 38<br>
+							метро Парк Победы
+					</p>
+				</div>
+				<!-- /.footer-adress -->
+				<div class="footer-contact">
+					<p class="footer__contacts">
+							Работаем по будням с 10.00 до 18.00<br>
+							<a href="mailto:info@avt-af.ru">info@avt-af.ru</a> <br>
+							<span class="footer__phone text_big text_bold">(812) 244-65-10</span>
+					</p>
+				</div>
+				<!-- /.footer-contact -->
+				<div class="footer-company">
+					<span class="footer__copyright">© Группа компаний “АВТ АЛЬЯНС ФИНАНС”</span>
+					<a href="avt-af.ru">www.avt-af.ru</a>
+					<span class="footer__develop">Разработано</span>
+				</div>
+				<!-- /.footer-company -->
+			</div>
+			<!-- /.footer-content -->
+		</div>
+		<!-- /.container -->
+	</footer>
+	<!-- /.footer -->
 
 	<script src="js/jquery-3.4.1.min.js"></script>
 	<script src="js/slick.min.js"></script>
@@ -127,3 +180,16 @@
 </body>
 
 </html>
+
+<!-- <div class="premises-slider__item">
+	<div class="premises-card">
+		<div class="premises__image">
+			<img src="img/premises/cover_arenda.jpg" alt="Обложка помещения">
+		</div>
+		<span class="premises__subtitle">склад</span>
+		<p class="premises__text">г. Санкт-Петербург <br>
+			Цена: <span class="text_bold">30 000 руб.</span></p>
+	</div> -->
+	<!-- /.premises-card -->
+<!-- </div> -->
+<!-- /.premises-slider__item -->

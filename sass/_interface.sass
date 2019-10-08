@@ -26,3 +26,13 @@ img
     font-weight: bold
   &_big 
     font-size: 23px
+
+// HOVER ЭФФЕКТЫ 
+@media (min-width: 992px)
+  .footer
+    &-list
+      &__item 
+        a 
+          &:hover 
+            color: $secondary-color
+            text-shadow: 2 2 2 lighten($text-color, 20%)
