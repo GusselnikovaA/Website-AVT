@@ -3,6 +3,10 @@ $(document).ready(function () {
   $('.premises-slider').slick({
     slidesToShow: 3,
     slidesToScroll: 1,
+    speed: 2000,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    infinite: true,
     prevArrow: $('.premises__arrows__left'),
     nextArrow: $('.premises__arrows__right'),
   });

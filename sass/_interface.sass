@@ -30,10 +30,15 @@ img
 
 // HOVER ЭФФЕКТЫ 
 @media (min-width: 992px)
+  .header
+    &-list
+      &__item 
+        &:hover 
+          background-color: lighten($main-color, 10%)
   .footer
     &-list
       &__item 
         a 
           &:hover 
-            color: $secondary-color
+            color: saturate($secondary-color, 20%)
             text-shadow: 2 2 2 lighten($text-color, 20%)
