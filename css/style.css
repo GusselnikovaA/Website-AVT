@@ -380,9 +380,48 @@ img {
   font-size: 23px;
 }
 
+.input {
+  border: 1px solid #dfdfdf;
+  border-radius: 25px;
+  padding: 19px 37px;
+  font-size: 15px;
+  outline: none;
+}
+
+.input:focus {
+  -webkit-box-shadow: 0 0 5px #b0d65f;
+          box-shadow: 0 0 5px #b0d65f;
+  border: 1px solid #b0d65f;
+  border-radius: 25px;
+}
+
+.button {
+  outline: none;
+  border-radius: 25px;
+  border: none;
+  padding: 19px 37px;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.button:hover {
+  cursor: pointer;
+  -webkit-box-shadow: 0 0 5px #5f7c20;
+          box-shadow: 0 0 5px #5f7c20;
+}
+
 @media (min-width: 992px) {
+<<<<<<< HEAD
   .header-list__item:hover {
     background-color: #08c6fd;
+=======
+  a:hover {
+    cursor: pointer;
+  }
+  .call__phone:hover {
+    font-size: 30px;
+>>>>>>> e3e93432571f60f3795ddb7e19e1b590ef4f7d16
   }
   .footer-list__item a:hover {
     color: #a5e41e;
@@ -492,6 +531,11 @@ img {
 
 .slick-arrow.slick-hidden {
   display: none;
+}
+
+.header {
+  -webkit-box-shadow: 0 0 15px #acacac;
+          box-shadow: 0 0 15px #acacac;
 }
 
 .header-container {
@@ -633,10 +677,6 @@ img {
   padding-top: 10px;
 }
 
-.premises {
-  border-bottom: none;
-}
-
 .premises-wrap {
   position: relative;
 }
@@ -703,10 +743,73 @@ img {
   z-index: 1;
 }
 
+.call {
+  border-bottom: none;
+}
+
+.call-block {
+  width: 80%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.call__title {
+  margin-bottom: 30px;
+}
+
+.call__subtitle {
+  color: #797979;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+.call__input {
+  width: 60%;
+  margin-bottom: 20px;
+}
+
+.call__button {
+  width: 60%;
+  background-color: #9ccb37;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.call-back {
+  width: 280px;
+}
+
+.call-back__text {
+  color: #797979;
+  line-height: 1.4;
+}
+
+.call__phone {
+  display: inline-block;
+  color: #797979;
+  text-decoration: none;
+  line-height: 1.4;
+}
+
 .footer {
   background-color: #02a2d0;
   padding: 55px 0;
   color: #ffffff;
+  -webkit-box-shadow: 0 0 15px #acacac;
+          box-shadow: 0 0 15px #acacac;
 }
 
 .footer-list {

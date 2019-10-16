@@ -106,7 +106,7 @@
 										<img src="img/premises/cover_arenda.jpg" alt="Обложка помещения">
 									</div>
 									<span class="premises__subtitle">склад</span>
-									<p class="premises__text">
+									<p class="premises__text">г. Санкт-Петербург <br>
 										Цена: <span class="text_bold">30 000 руб.</span></p>
 								</div>
 							<!-- /.premises-card -->
@@ -118,7 +118,7 @@
 											<img src="img/premises/cover_arenda.jpg" alt="Обложка помещения">
 										</div>
 										<span class="premises__subtitle">склад</span>
-										<p class="premises__text">
+										<p class="premises__text">г. Санкт-Петербург <br>
 											Цена: <span class="text_bold">30 000 руб.</span></p>
 									</div>
 								<!-- /.premises-card -->
@@ -130,7 +130,7 @@
 												<img src="img/premises/cover_arenda.jpg" alt="Обложка помещения">
 											</div>
 											<span class="premises__subtitle">склад</span>
-											<p class="premises__text">
+											<p class="premises__text">г. Санкт-Петербург <br>
 												Цена: <span class="text_bold">30 000 руб.</span></p>
 										</div>
 									<!-- /.premises-card -->
@@ -142,7 +142,7 @@
 													<img src="img/premises/cover_arenda.jpg" alt="Обложка помещения">
 												</div>
 												<span class="premises__subtitle">склад</span>
-												<p class="premises__text">
+												<p class="premises__text">г. Санкт-Петербург <br>
 													Цена: <span class="text_bold">30 000 руб.</span></p>
 											</div>
 										<!-- /.premises-card -->
@@ -162,29 +162,32 @@
 			</div>
 			<!-- /.container -->
 		</section>
-		<!-- /.premises -->
-
-		<section class="section call">
+    <!-- /.premises -->
+    
+    <section class="section form">
       <div class="container">
-				<div class="call-block">
-						<h2 class="title call__title">Закажите обратный звонок!</h2>
-						<span class="call__subtitle text_bold">Заполните поля ниже и мы свяжемся с Вами в течении 5 минут</span>
-						<form action="#" class="form call__form" id="call-form">
-							<input type="text" name="username" class="input call__input" placeholder="Ваше имя">
-							<input type="tel" name="userphone" class="input call__input phone" placeholder="Ваш телефон">
-							<input type="email" name="useremail" class="input call__input" placeholder="Ваш email">
-							<button type="submit" class="button call__button">Отправить</button>
-						</form>
-						<!-- /.form call__form -->
-						<div class="call-back">
-							<span class="call-back__text">Или Вы можете позвонить нам сами
-								по телефону:
-							</span>
-							<a href="tel:8(812)244-65-10" class="call__phone text_bold text_big">8 (812) 244-65-10</a>
-						</div>
-						<!-- /.call-back -->
-				</div>
-				<!-- /.call-block -->
+        <h2 class="modal__title">Закажите обратный звонок!</h2>
+        <!-- /.section-title -->
+        <span class="section-subtitle modal__subtitle">Заполните поля ниже <br> и мы свяжемся с Вами в течении 5 минут
+        </span>
+        <!-- /.section-subtitle -->
+        <form action="#" class="form modal__form" id="modal-form"
+          onsubmit="ym(55070110, 'reachGoal', 'send'); return true;">
+          <input type="text" name="username" class="input modal__input" placeholder="Ваше имя">
+          <input type="tel" name="userphone" class="input modal__input phone" placeholder="Ваш телефон">
+          <input type="email" name="useremail" class="input modal__input" placeholder="Ваш email">
+          <button type="submit" class="button modal__button">Отправить</button>
+        </form>
+        <!-- /.form modal__form -->
+        <div class="modal-call">
+          <span class="modal-call__text">Или Вы можете перезвонить нам сами
+            по телефону:
+          </span>
+          <a href="tel:8(950)321-65-55" class="modal__phone">8 (950) 321-65-55</a>
+        </div>
+        <!-- /.modal-call -->
+      </div>
+      <!-- /.modal-container -->
       </div>
       <!-- /.container -->
     </section>

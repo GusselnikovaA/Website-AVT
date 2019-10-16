@@ -28,13 +28,47 @@ img
   &_big 
     font-size: 23px
 
+.input
+  border: 1px solid lighten($text-color, 40%)
+  border-radius: 25px
+  padding: 19px 37px
+  font-size: 15px
+  outline: none
+  &:focus
+    box-shadow: 0 0 5px lighten($secondary-color, 10%)
+    border: 1px solid lighten($secondary-color, 10%)
+    border-radius: 25px
+
+.button
+  outline: none
+  border-radius: 25px
+  border: none 
+  padding: 19px 37px
+  font-size: 14px
+  font-weight: bold
+  text-transform: uppercase
+  &:hover
+    cursor: pointer
+    box-shadow: 0 0 5px darken($secondary-color, 20%)
+
 // HOVER ЭФФЕКТЫ 
 @media (min-width: 992px)
+<<<<<<< HEAD
   .header
     &-list
       &__item 
         &:hover 
           background-color: lighten($main-color, 10%)
+=======
+  a
+    &:hover 
+      cursor: pointer
+
+  .call
+    &__phone 
+      &:hover 
+        font-size: 30px
+>>>>>>> e3e93432571f60f3795ddb7e19e1b590ef4f7d16
   .footer
     &-list
       &__item 
