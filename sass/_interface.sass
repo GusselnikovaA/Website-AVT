@@ -2,6 +2,7 @@
   box-sizing: border-box
 
 body 
+  color: $text-color
   font-family: "Roboto"
   
 img
@@ -53,22 +54,18 @@ img
 
 // HOVER ЭФФЕКТЫ 
 @media (min-width: 992px)
-<<<<<<< HEAD
+  a
+    &:hover 
+      cursor: pointer
   .header
     &-list
       &__item 
         &:hover 
           background-color: lighten($main-color, 10%)
-=======
-  a
-    &:hover 
-      cursor: pointer
-
   .call
     &__phone 
       &:hover 
         font-size: 30px
->>>>>>> e3e93432571f60f3795ddb7e19e1b590ef4f7d16
   .footer
     &-list
       &__item 

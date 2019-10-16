@@ -10,6 +10,7 @@
 
 	<link rel="stylesheet" href="css/style.css">
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/0b8faaede2.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -20,16 +21,16 @@
 				<div class="header-navbar">
 					<ul class="header-list">
 						<li class="header-list__item">
-							<a href="#">главная</a>
+							<a href="index.html">главная</a>
 						</li>
 						<li class="header-list__item">
-							<a href="#">услуги</a>
+							<a href="services.html">услуги</a>
 						</li>
 						<li class="header-list__item">
-							<a href="#">каталог аренды</a>
+							<a href="catalog.html">каталог аренды</a>
 						</li>
 						<li class="header-list__item">
-							<a href="#">контакты</a>
+							<a href="contacts.html">контакты</a>
 						</li>
 					</ul>
 					<!-- /.header-list -->
@@ -42,13 +43,18 @@
 	</header>
 	<!-- /.header -->
 
+	<!-- КНОПКА ВВЕРХ В ПРАВОМ НЖНЕМ УГЛУ -->
+  <button class="up" id="up">
+		<i class="fa fa-angle-double-up"></i>
+	</button>
+
 	<main>
 		<section class="section about">
 			<div class="container">
 				<h2 class="title about__title">О компании</h2>
 				<div class="about-content">
-					<p class="about__text"> <span class="text_bold">АВТ Альянс Финанс</span> - это компания давно и качественно
-						работающая в сфере коммерческой недвижимости
+					<p class="about__text"> <span class="text_bold">АВТ Альянс Финанс</span> - это группа компаний давно и качественно
+						работающих в сфере коммерческой недвижимости
 						Санкт-Петербурга.
 					</p>
 					<p class="about__text">
@@ -60,7 +66,7 @@
 						партнером для всех заинтересованных сторон.
 					</p>
 					<p class="about__text">
-						Специалисты нашей компании готовы предложить своим клиентам индивидуальный подход, надежную работу,
+						Наши специалисты готовы предложить своим клиентам индивидуальный подход, надежную работу,
 						максимально оперативную и качественную реализацию Вашего объекта недвижимости.
 					</p>
 				</div>
@@ -188,55 +194,71 @@
       </div>
       <!-- /.container -->
     </section>
-    <!-- /.section form -->
+    <!-- /.section call -->
 	</main>
 
 	<footer class="footer">
 		<div class="container">
-			<nav class="footer-nav">
-				<ul class="footer-list">
-					<li class="footer-list__item">
-						<a href="#">главная</a>
-					</li>
-					<!-- /.footer-list__item -->
-					<li class="footer-list__item">
-						<a href="#">услуги</a>
-					</li>
-					<!-- /.footer-list__item -->
-					<li class="footer-list__item">
-						<a href="#">каталог аренды</a>
-					</li>
-					<!-- /.footer-list__item -->
-					<li class="footer-list__item">
-						<a href="#">контакты</a>
-					</li>
-					<!-- /.footer-list__item -->
-				</ul>
-				<!-- /.footer-list -->
-			</nav>
-			<!-- /.footer-nav -->
-			<div class="footer-content">
-				<div class="footer-address">
-					<p class="footer__address">г. Санкт-Петербург<br>
-						ул. Бассейная, дом 38<br>
-						метро Парк Победы
-					</p>
+			<div class="footer-block">
+				<div class="footer-content">
+						<nav class="footer-nav">
+								<ul class="footer-list">
+									<li class="footer-list__item">
+										<a href="#">главная</a>
+									</li>
+									<!-- /.footer-list__item -->
+									<li class="footer-list__item">
+										<a href="#">услуги</a>
+									</li>
+									<!-- /.footer-list__item -->
+									<li class="footer-list__item">
+										<a href="#">каталог аренды</a>
+									</li>
+									<!-- /.footer-list__item -->
+									<li class="footer-list__item">
+										<a href="#">контакты</a>
+									</li>
+									<!-- /.footer-list__item -->
+								</ul>
+								<!-- /.footer-list -->
+							</nav>
+							<!-- /.footer-nav -->
+							<div class="footer-info">
+								<div class="footer-address">
+									<div class="footer__icon">
+										<i class="fa fa-map-marker-alt"></i>
+									</div>
+									<p class="footer__address">
+										г. Санкт-Петербург<br>
+										ул. Бассейная, дом 38<br>
+										метро Парк Победы
+									</p>
+								</div>
+								<!-- /.footer-adress -->
+								<div class="footer-contact">
+									<p class="footer__contacts">
+				
+										Работаем по будням с 10.00 до 18.00<br>
+										<a href="mailto:info@avt-af.ru">info@avt-af.ru</a> <br>
+										<span class="footer__phone text_big text_bold">(812) 244-65-10</span>
+									</p>
+								</div>
+								<!-- /.footer-contact -->
+							</div>
+							<!-- /.footer-info -->
 				</div>
-				<!-- /.footer-adress -->
-				<div class="footer-contact">
-					<p class="footer__contacts">
-						Работаем по будням с 10.00 до 18.00<br>
-						<a href="mailto:info@avt-af.ru">info@avt-af.ru</a> <br>
-						<span class="footer__phone text_big text_bold">(812) 244-65-10</span>
-					</p>
-				</div>
-				<!-- /.footer-contact -->
-				<div class="footer-company">
-					<span class="footer__copyright">© Группа компаний “АВТ АЛЬЯНС ФИНАНС”</span>
-					<a href="avt-af.ru">www.avt-af.ru</a>
-					<span class="footer__develop">Разработано</span>
-				</div>
-				<!-- /.footer-company -->
+				<!-- /.footer-block -->
+						<div class="footer-company">
+							<div class="footer-company__logo">
+									<img src="img/footer/АВТ Логотип 3.jpg" alt="Логотип компании">
+							</div>
+								<!-- <div class="footer-company__info">
+										<span class="footer__copyright">© Группа компаний “АВТ АЛЬЯНС ФИНАНС”</span>
+										<a href="avt-af.ru">www.avt-af.ru</a>
+										<span class="footer__develop">Разработано</span>
+									</div> -->
+							</div>
+							<!-- /.footer-company-->
 			</div>
 			<!-- /.footer-content -->
 		</div>

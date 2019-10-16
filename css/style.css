@@ -347,6 +347,7 @@ template {
 }
 
 body {
+  color: #797979;
   font-family: "Roboto";
 }
 
@@ -412,16 +413,14 @@ img {
 }
 
 @media (min-width: 992px) {
-<<<<<<< HEAD
-  .header-list__item:hover {
-    background-color: #08c6fd;
-=======
   a:hover {
     cursor: pointer;
   }
+  .header-list__item:hover {
+    background-color: #08c6fd;
+  }
   .call__phone:hover {
     font-size: 30px;
->>>>>>> e3e93432571f60f3795ddb7e19e1b590ef4f7d16
   }
   .footer-list__item a:hover {
     color: #a5e41e;
@@ -812,6 +811,38 @@ img {
           box-shadow: 0 0 15px #acacac;
 }
 
+.footer-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 60%;
+}
+
+.footer-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .footer-list {
   padding: 0;
   margin: 0;
@@ -839,7 +870,7 @@ img {
   text-transform: uppercase;
 }
 
-.footer-content {
+.footer-info {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -847,6 +878,12 @@ img {
       -ms-flex-pack: justify;
           justify-content: space-between;
   line-height: 1.4;
+}
+
+.footer-address {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .footer__contacts a {
@@ -865,7 +902,13 @@ img {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  margin: 16px 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer-company__logo {
+  max-width: 250px;
 }
 
 .footer-company a {
@@ -875,5 +918,12 @@ img {
 
 .footer__phone {
   color: #a5e41e;
+}
+
+.footer__icon {
+  font-size: 16px;
+  color: #9ccb37;
+  margin-top: 16px;
+  margin-right: 10px;
 }
 /*# sourceMappingURL=style.css.map */

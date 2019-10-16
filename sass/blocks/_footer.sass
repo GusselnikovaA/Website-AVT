@@ -3,6 +3,17 @@
   padding: 55px 0
   color: $light-color
   box-shadow: 0 0 15px lighten($text-color, 20%)
+  &-block 
+    display: flex
+    justify-content: space-between
+  &-content
+    display: flex
+    flex-direction: column
+    width: 60%
+  &-nav 
+    display: flex
+    justify-content: space-between
+    align-items: center
   &-list
     padding: 0 
     margin: 0
@@ -20,10 +31,12 @@
         color: $light-color
         text-decoration: none
         text-transform: uppercase
-  &-content 
+  &-info 
     display: flex
     justify-content: space-between
     line-height: 1.4
+  &-address 
+    display: flex
   &__contacts 
     a 
       color: $light-color
@@ -32,11 +45,19 @@
     display: flex
     flex-direction: column
     align-items: flex-end
-    margin: 16px 0
+    justify-content: center
+    &__logo  
+      max-width: 250px
     a
       color: $light-color
       text-decoration: none
   &__phone 
     color: saturate($secondary-color, 20%)
+  &__icon 
+    font-size: 16px
+    color: $secondary-color
+    margin-top: 16px
+    margin-right: 10px
+
 
   
