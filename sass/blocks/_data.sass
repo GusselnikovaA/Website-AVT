@@ -13,19 +13,23 @@
     align-items: center
     justify-content: center
     color: $light-color
-    box-shadow: 5px 5px 15px lighten($text-color, 20%)
+    // box-shadow: 5px 5px 15px lighten($text-color, 20%)
     &:first-child
-      border: 5px solid saturate($secondary-color, 20%)
+      border: 2px solid $light-color
       background-color: saturate($secondary-color, 20%)
+      box-shadow: 1px 1px 0px 10px saturate($secondary-color, 20%)
     &:nth-child(2)
-      border: 5px solid $main-color
+      border: 2px solid $light-color
       background-color: $main-color
+      box-shadow: 1px 1px 0px 10px $main-color
     &:nth-child(3)
-      border: 5px solid $secondary-color
+      border: 2px solid $light-color
       background-color: $secondary-color
+      box-shadow: 1px 1px 0px 10px $secondary-color
     &:nth-child(4)
-      border: 5px solid lighten($main-color, 8%)
+      border: 2px solid $light-color
       background-color: lighten($main-color, 8%)
+      box-shadow: 1px 1px 0px 10px lighten($main-color, 8%)
   &__text 
     padding-top: 10px
     max-width: 140px
