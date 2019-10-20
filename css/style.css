@@ -420,6 +420,15 @@ img {
   .header-list__item:hover {
     background-color: #08c6fd;
   }
+  .premises-card:hover {
+    cursor: pointer;
+  }
+  .premises-card:hover .premises__image:before {
+    opacity: 1;
+  }
+  .premises-card:hover .premises__subtitle {
+    font-weight: bold;
+  }
   .footer-list__item a:hover {
     color: #a5e41e;
     text-shadow: 2 2 2 #acacac;
@@ -718,6 +727,21 @@ img {
 
 .premises__image {
   margin-bottom: 16px;
+  position: relative;
+}
+
+.premises__image:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#9ccb37), to(rgba(255, 255, 255, 0)));
+  background-image: linear-gradient(to top, #9ccb37 0%, rgba(255, 255, 255, 0) 100%);
+  opacity: 0;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 
 .premises__subtitle {
@@ -962,7 +986,7 @@ img {
 .footer__phone {
   display: inline-block;
   margin-top: 10px;
-  color: #a5e41e;
+  color: #9ccb37;
 }
 
 .footer__icon {
@@ -970,6 +994,37 @@ img {
   color: #9ccb37;
   margin-top: 16px;
   margin-right: 10px;
+}
+
+.contact-wrap {
+  max-width: 650px;
+  margin: auto;
+}
+
+.contact-address {
+  margin-top: 15px;
+}
+
+.contact__icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  font-size: 20px;
+  color: #9ccb37;
+}
+
+.contact-address, .contact-schedule, .contact-phone, .contact-email {
+  margin-bottom: 15px;
+}
+
+.contact-phone a, .contact-email a {
+  text-decoration: none;
+  color: #797979;
+  font-weight: bold;
+}
+
+.contact-map {
+  margin-top: 30px;
 }
 
 .up {

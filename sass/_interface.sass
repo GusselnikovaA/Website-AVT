@@ -62,6 +62,16 @@ img
       &__item 
         &:hover 
           background-color: lighten($main-color, 10%)
+
+  .premises 
+    &-card 
+      &:hover 
+        cursor: pointer
+        .premises__image:before 
+          opacity: 1
+        .premises__subtitle 
+          font-weight: bold
+
   .footer
     &-list
       &__item 
