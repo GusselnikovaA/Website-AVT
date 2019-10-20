@@ -429,6 +429,9 @@ img {
   .premises-card:hover .premises__subtitle {
     font-weight: bold;
   }
+  .rent__close:hover {
+    color: #9ccb37;
+  }
   .footer-list__item a:hover {
     color: #a5e41e;
     text-shadow: 2 2 2 #acacac;
@@ -1053,5 +1056,55 @@ img {
     opacity: .6;
     cursor: default;
   }
+}
+
+.rent {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.rent_active {
+  display: none;
+}
+
+.rent-container {
+  position: relative;
+  margin: auto;
+  max-width: 1000px;
+  width: 90%;
+  min-height: 600px;
+  background-color: #fff;
+  padding: 52px;
+}
+
+.rent-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.rent__close {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: 0;
+  right: 0;
+  font-size: 30px;
+  color: #02a2d0;
+  border: none;
+  background-color: #ffffff;
+  outline: none;
+  cursor: pointer;
+}
+
+.rent-content {
+  width: 55%;
 }
 /*# sourceMappingURL=style.css.map */
