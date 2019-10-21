@@ -62,13 +62,18 @@ img
       &__item 
         &:hover 
           background-color: lighten($main-color, 10%)
+    &-logo 
+      &:hover 
+        cursor: pointer
 
   .premises 
     &-card 
       &:hover 
         cursor: pointer
-        .premises__image:before 
-          opacity: 1
+        .premises__image
+          box-shadow: 0 25px 25px rgba(0, 0, 0, 0.1)
+          margin-top: -4px;
+          transition: 0.2s
         .premises__subtitle 
           font-weight: bold
 
