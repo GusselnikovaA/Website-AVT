@@ -16,8 +16,6 @@
     min-height: 600px
     background-color: #fff
     padding: 52px
-  &-wrap 
-    display: flex
   &__close
     position: absolute
     width: 40px
@@ -30,3 +28,30 @@
     background-color: $light-color
     outline: none
     cursor: pointer
+  &-content 
+    position: relative
+  &-slider 
+    display: flex
+    justify-content: center
+    align-items: center
+    &__item 
+      outline: none
+  &__image 
+    display: flex
+    justify-content: center
+    align-items: center
+    max-width: 600px
+    max-height: 400px
+    margin: auto
+    // width: 50%
+  &__arrows 
+    position: absolute
+    top: 49%
+    right: 0
+    left: 0
+    display: flex
+    justify-content: space-between
+    background-color: transparent
+    z-index: 1
+
+  
