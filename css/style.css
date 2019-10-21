@@ -1065,13 +1065,13 @@ img {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
 }
 
 .rent_active {
-  display: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .rent-container {
@@ -1096,6 +1096,10 @@ img {
   background-color: #ffffff;
   outline: none;
   cursor: pointer;
+}
+
+.rent__title {
+  text-transform: none;
 }
 
 .rent-content {
