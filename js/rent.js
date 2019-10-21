@@ -10,6 +10,8 @@ $(document).ready(function(){
 
   premise.on('click', function(){
     rent.addClass('rent_active');
+    let target = $(this).attr('data-target');
+    $('.rent-wrap').load(target+".html");
   });
   // price.on('click', function(){
   //   modal.addClass('modal_active');
