@@ -12,15 +12,42 @@
   -moz-user-select: none
   -ms-user-select: none
   user-select: none
-  
+
 .services 
   text-align: left
   &__title 
     margin-bottom: 30px
+  &__subtitle
+    font-size: 18px
+    text-transform: uppercase
+    font-weight: normal
   &-content 
     max-width: 650px
     margin: auto
     text-align: justify
+  &__text 
+    // font-size: 17px
+    // line-height: 26px
+    // letter-spacing: 1px
+    position: relative
+    overflow: hidden
+    // max-height: 800px
+    @extend .transition
+    opacity: 1
+    transform: translate( 0 , 0 )  
+    margin-top: 14px
+    z-index: 2
+    // padding-inline-start: 20px
+    list-style: none
+    &__item 
+      display: flex
+      align-items: center
+      margin: 8px 0
+      &:before
+        content: "•"
+        font-size: 30px
+        color: $secondary-color
+        padding-right: 10px
   &-list 
     list-style: none
     perspective: 900
@@ -40,13 +67,17 @@
         animation-delay: 0.75s 
       &:nth-of-type(3)
         animation-delay: 1.0s
+      &:nth-of-type(4)
+        animation-delay: 1.25s
       &:last-of-type
         padding-bottom: 0
+      // стрелки справа, вообще их наличие, элемент возле которого строится before и after 
       i
         position: absolute
         transform: translate( -6px , 0 )
         margin-top: 16px
         right: 0
+        // стрелки справа, вообще их наличие
         &:before , &:after
           content: ""
           @extend .transition
@@ -54,8 +85,10 @@
           background-color: $secondary-color
           width: 3px
           height: 9px 
-        &:before
-          transform: translate( -2px , 0 ) rotate( 45deg )  
+        // стрелки их положение в обратную сторону левая сторона
+        &:before 
+          transform: translate( -2px , 0 ) rotate( 45deg ) 
+        // стрелки их положение в обратную сторону правая сторона   
         &:after
           transform: translate( 2px , 0 ) rotate( -45deg )
       input[type=checkbox]
@@ -66,7 +99,7 @@
         z-index: 1
         opacity: 0
         &:checked
-          &~p
+          &~ul
             margin-top: 0
             max-height: 0
             opacity: 0
@@ -78,17 +111,6 @@
               transform: translate( -2px , 0 ) rotate( -45deg )
 
 
-// .list 
-//   &-secondary 
-//     padding-inline-start: 20px
-//     list-style: none
-//     &__item 
-//       margin: 8px 0
-//       &:before
-//         content: "•"
-//         font-size: 20px
-//         color: $secondary-color
-//         padding-right: 7px
 
 
   

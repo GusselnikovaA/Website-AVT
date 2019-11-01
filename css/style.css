@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -931,7 +932,7 @@ img {
   line-height: 1.4;
 }
 
-.transition, .services-list__item i:before, .services-list__item i:after {
+.transition, .services__text, .services-list__item i:before, .services-list__item i:after {
   -webkit-transition: all 0.25s ease-in-out;
   transition: all 0.25s ease-in-out;
 }
@@ -958,10 +959,44 @@ img {
   margin-bottom: 30px;
 }
 
+.services__subtitle {
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+
 .services-content {
   max-width: 650px;
   margin: auto;
   text-align: justify;
+}
+
+.services__text {
+  position: relative;
+  overflow: hidden;
+  opacity: 1;
+  -webkit-transform: translate(0, 0);
+          transform: translate(0, 0);
+  margin-top: 14px;
+  z-index: 2;
+  list-style: none;
+}
+
+.services__text__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 8px 0;
+}
+
+.services__text__item:before {
+  content: "•";
+  font-size: 30px;
+  color: #9ccb37;
+  padding-right: 10px;
 }
 
 .services-list {
@@ -994,6 +1029,11 @@ img {
 .services-list__item:nth-of-type(3) {
   -webkit-animation-delay: 1.0s;
           animation-delay: 1.0s;
+}
+
+.services-list__item:nth-of-type(4) {
+  -webkit-animation-delay: 1.25s;
+          animation-delay: 1.25s;
 }
 
 .services-list__item:last-of-type {
@@ -1035,7 +1075,7 @@ img {
   opacity: 0;
 }
 
-.services-list__item input[type=checkbox]:checked ~ p {
+.services-list__item input[type=checkbox]:checked ~ ul {
   margin-top: 0;
   max-height: 0;
   opacity: 0;
