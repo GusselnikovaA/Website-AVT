@@ -6,15 +6,24 @@ $(document).ready(function(){
   premise.on('click', function(){
     rent.addClass('rent_active');
     var target = $(this).attr('data-target');
-    $('.rent-wrap').load(target+".html");
+    $.ajax({  
+      url: target+".html",  
+      cache: false,  
+      success: function(html){  
+          $(".rent-wrap").html(html);  
+          $('.rent-slider').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            speed: 2000,
+            prevArrow: $('.rent__arrows__left'),
+            nextArrow: $('.rent__arrows__right'),
+          });
+      }  
+  });  
+    // var target = $(this).attr('data-target');
+    // $('.rent-wrap').load(target+".html");
+    // location.reload();    //JavaScript функция перегрузки страницы
     // $('.rent-slider').slick('refresh');
-      $('.rent-slider').slick({
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        speed: 2000,
-        prevArrow: $('.rent__arrows__left'),
-        nextArrow: $('.rent__arrows__right'),
-      });
   });
   
   close.on('click', function(){

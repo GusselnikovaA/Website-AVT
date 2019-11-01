@@ -21,7 +21,7 @@
 			<a href="index.html"><img src="img/header/header_logo.png" alt="Логотип компании"></a>
 		</div>
 		<div class="header-phone">
-				<a href="tel:8(812)244-65-10">244-65-10</a>
+			<a href="tel:8(812)244-65-10">244-65-10</a>
 		</div>
 		<span class="header__icon"><i class="fas fa-phone"></i></span>
 		<div class="container header-container">
@@ -182,6 +182,17 @@
 		</section>
 		<!-- /.premises -->
 
+			<!-- ОКНО БЛАГОДАРНСТИ ПОСЛЕ ОТПРАВКИ ФОРМЫ -->
+	<div class="success" id="success">
+		<div class="success__content">
+			<button class="success__close" id="success-close">
+				<i class="fa fa-times"></i>
+			</button>
+			<h2 class="success__text">Спасибо за заявку!<br> Cкоро мы вам перезвоним</h2>
+		</div>
+	</div>
+	<!-- /.success -->
+
 		<!-- СЕКЦИЯ С ФОРМОЙ ОБРАТНОЙ СВЯЗИ -->
 		<section class="section call">
 			<div class="container">
@@ -292,10 +303,12 @@
 				<i class="fa fa-times"></i>
 			</button>
 			<div class="rent-wrap">
-					
 			</div>
 			<!-- /.rent-wrap -->
-			<a href="catalog.html">Перейти в каталог</a>
+			<div class="rent__link">
+				<a href="catalog.html">Перейти в каталог</a>
+			</div>
+			<!-- /.rent__link -->
 		</div>
 		<!-- /.rent-container -->
 	</div>
@@ -305,6 +318,10 @@
 	<script src="js/slick.min.js"></script>
 	<script src="js/premises-slider.js"></script>
 	<script src="js/rent.js"></script>
+	<script src="js/up.js"></script>
+	<script src="js/validate.js"></script>
+	<script src="js/jquery.validate.min.js"></script>
+	<script src="js/jquery.maskedinput.min.js"></script>
 
 </body>
 
