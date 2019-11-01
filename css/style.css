@@ -960,9 +960,10 @@ img {
 }
 
 .services__subtitle {
+  color: #9ccb37;
+  font-weight: bold;
   font-size: 18px;
   text-transform: uppercase;
-  font-weight: normal;
 }
 
 .services-content {
@@ -1073,6 +1074,11 @@ img {
   height: 100%;
   z-index: 1;
   opacity: 0;
+}
+
+.services-list__item input[type=checkbox]:checked ~ h2 {
+  color: #797979;
+  font-weight: normal;
 }
 
 .services-list__item input[type=checkbox]:checked ~ ul {
