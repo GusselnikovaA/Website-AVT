@@ -436,6 +436,19 @@ img {
   .premises-card:hover .premises__subtitle {
     font-weight: bold;
   }
+  .catalog-card:hover {
+    cursor: pointer;
+  }
+  .catalog-card:hover .catalog__image {
+    -webkit-box-shadow: 0 25px 25px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 25px 25px rgba(0, 0, 0, 0.1);
+    margin-top: -4px;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+  }
+  .catalog-card:hover .catalog__subtitle {
+    font-weight: bold;
+  }
   .rent__close:hover {
     color: #9ccb37;
   }
@@ -1223,6 +1236,52 @@ img {
   color: #9ccb37;
   margin-top: 16px;
   margin-right: 10px;
+}
+
+.catalog__title {
+  margin-bottom: 30px;
+}
+
+.catalog-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.catalog-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 15px;
+  width: 30%;
+  margin: auto;
+}
+
+.catalog__image {
+  margin-bottom: 16px;
+  position: relative;
+}
+
+.catalog__subtitle {
+  font-size: 18px;
+  color: #02a2d0;
+  text-transform: uppercase;
+}
+
+.catalog__text {
+  text-align: center;
 }
 
 .contact-wrap {
