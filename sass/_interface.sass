@@ -40,6 +40,13 @@ img
     border: 1px solid lighten($secondary-color, 10%)
     border-radius: 25px
 
+input.error 
+  border: 1px solid $error-color
+  &:focus
+    box-shadow: 0 0 5px $error-color
+    border: 1px solid $error-color
+    border-radius: 25px
+
 .button
   outline: none
   border-radius: 25px
@@ -87,6 +94,10 @@ img
           transition: 0.2s
         .catalog__subtitle 
           font-weight: bold
+  .call 
+    &__phone 
+      &:hover
+        color: $secondary-color
 
   .rent 
     &__close 

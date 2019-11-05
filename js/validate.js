@@ -1,7 +1,7 @@
 $(document).ready(function () {
   // Валидация формы
   $('#call-form').validate({
-    errorElement: "span",
+    errorElement: "div",
     rules: {
       username: {
         required: true,
@@ -24,7 +24,7 @@ $(document).ready(function () {
       },
       useremail: {
         required: "Заполните поле", 
-        email: "Введите корректный email. Например: name@domain.com"
+        email: "Введите корректный email."
       },
       userphone: "Заполните поле"
     },

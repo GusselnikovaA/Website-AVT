@@ -27,23 +27,19 @@
     margin: auto
     text-align: justify
   &__text 
-    // font-size: 17px
-    // line-height: 26px
-    // letter-spacing: 1px
     position: relative
     overflow: hidden
-    // max-height: 800px
     @extend .transition
     opacity: 1
     transform: translate( 0 , 0 )  
     margin-top: 14px
     z-index: 2
-    // padding-inline-start: 20px
     list-style: none
     &__item 
       display: flex
       align-items: center
       margin: 8px 0
+      // нстройка элементов списка (зеленые кружки)
       &:before
         content: "•"
         font-size: 30px
@@ -99,6 +95,7 @@
         height: 100%
         z-index: 1
         opacity: 0
+        // Настройки изначаьно видимой гармошки(цвет заголовков, расположение стрелочек, скрытый контент)
         &:checked
           &~h2 
             color: $text-color

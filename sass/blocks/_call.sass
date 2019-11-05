@@ -1,6 +1,7 @@
 .call 
   border-bottom: none
   &-block 
+    position: relative
     width: 80%
     margin: auto
     display: flex
@@ -32,3 +33,24 @@
     color: $text-color
     text-decoration: none
     line-height: 1.4
+
+
+div#username-error, div#userphone-error, div#useremail-error
+  font-weight: bold
+  color: $error-color
+  display: inline-block
+
+div#username-error
+  position: absolute
+  top: 28%
+  left: 44%
+
+div#userphone-error
+  position: absolute
+  top: 44%
+  left: 44%
+
+div#useremail-error
+  position: absolute
+  top: 59%
+  left: 44%

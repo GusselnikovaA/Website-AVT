@@ -397,6 +397,17 @@ img {
   border-radius: 25px;
 }
 
+input.error {
+  border: 1px solid #e51c1c;
+}
+
+input.error:focus {
+  -webkit-box-shadow: 0 0 5px #e51c1c;
+          box-shadow: 0 0 5px #e51c1c;
+  border: 1px solid #e51c1c;
+  border-radius: 25px;
+}
+
 .button {
   outline: none;
   border-radius: 25px;
@@ -448,6 +459,9 @@ img {
   }
   .catalog-card:hover .catalog__subtitle {
     font-weight: bold;
+  }
+  .call__phone:hover {
+    color: #9ccb37;
   }
   .rent__close:hover {
     color: #9ccb37;
@@ -700,15 +714,13 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   padding: 0;
   margin: auto;
   margin-bottom: 0;
-  max-width: 765px;
+  max-width: 795px;
   list-style: none;
   text-transform: uppercase;
+  padding-left: 30px;
 }
 
 .header-list__item {
@@ -882,6 +894,7 @@ img {
           justify-content: space-between;
   background-color: transparent;
   z-index: 1;
+  cursor: pointer;
 }
 
 .call {
@@ -889,6 +902,7 @@ img {
 }
 
 .call-block {
+  position: relative;
   width: 80%;
   margin: auto;
   display: -webkit-box;
@@ -943,6 +957,30 @@ img {
   color: #797979;
   text-decoration: none;
   line-height: 1.4;
+}
+
+div#username-error, div#userphone-error, div#useremail-error {
+  font-weight: bold;
+  color: #e51c1c;
+  display: inline-block;
+}
+
+div#username-error {
+  position: absolute;
+  top: 28%;
+  left: 44%;
+}
+
+div#userphone-error {
+  position: absolute;
+  top: 44%;
+  left: 44%;
+}
+
+div#useremail-error {
+  position: absolute;
+  top: 59%;
+  left: 44%;
 }
 
 .transition, .services__text, .services-list__item i:before, .services-list__item i:after {
