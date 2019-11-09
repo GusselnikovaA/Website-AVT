@@ -17,19 +17,24 @@
   &__icon 
     position: absolute
     bottom: 20%
-    right: 7%
+    right: 9%
     display: flex 
     justify-content: center 
     align-items: center
-    font-size: 50px
+    font-size: 40px
     color: $light-color
-    width: 90px
-    height: 90px
+    width: 70px
+    height: 70px
     border: none 
     border-radius: 50%
     background-color: $secondary-color
     color: $light-color
     outline: none 
+    animation: phone .9s ease-in-out infinite
+    opacity: .8
+    cursor: pointer
+    &:hover 
+      opacity: 1
   &-container
     max-width: 1200px
   &-background  

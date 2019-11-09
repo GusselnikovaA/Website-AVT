@@ -13,6 +13,7 @@
     align-items: center
     justify-content: center
     color: $light-color
+    animation: bounceInUp 3s
     // box-shadow: 5px 5px 15px lighten($text-color, 20%)
     &:first-child
       border: 2px solid $light-color
@@ -22,14 +23,17 @@
       border: 2px solid $light-color
       background-color: $main-color
       box-shadow: 1px 1px 0px 10px $main-color
+      animation-delay: 0.25s 
     &:nth-child(3)
       border: 2px solid $light-color
       background-color: $secondary-color
       box-shadow: 1px 1px 0px 10px $secondary-color
+      animation-delay: 0.5s 
     &:nth-child(4)
       border: 2px solid $light-color
       background-color: lighten($main-color, 8%)
       box-shadow: 1px 1px 0px 10px lighten($main-color, 8%)
+      animation-delay: 0.75s 
   &__text 
     padding-top: 10px
     max-width: 140px
