@@ -19,8 +19,8 @@ $(document).ready(function () {
     messages: {
       username: {
         required: "Заполните поле",
-        minlength: jQuery.validator.format ("Минимальное количество символов: 2"),
-        maxlength: jQuery.validator.format ("Максимальное количество символов: 15")
+        minlength: jQuery.validator.format ("Минимум 2 символа"),
+        maxlength: jQuery.validator.format ("Максимум 15 символов")
       },
       useremail: {
         required: "Заполните поле", 

@@ -9,5 +9,19 @@ $(document).ready(function () {
     infinite: true,
     prevArrow: $('.premises__arrows__left'),
     nextArrow: $('.premises__arrows__right'),
+    responsive: [
+      {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 2,
+      },
+    },
+    {
+      breakpoint: 586,
+      settings: {
+        slidesToShow: 1,
+      },
+    }
+    ]
   });
 });

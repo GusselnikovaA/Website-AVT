@@ -1,5 +1,4 @@
 .call 
-  display: none
   border-bottom: none
   &-block 
     position: relative
@@ -56,3 +55,38 @@ div#useremail-error
   position: absolute
   top: 59%
   left: 44%
+
+
+@media (max-width: 800px)
+  .call
+    &__input 
+      margin-bottom: 15px
+      width: 90%
+    &__button 
+      width: 90%
+
+  div#username-error
+    top: 29%
+    left: 35%
+  div#userphone-error
+    top: 45%
+    left: 35%
+  div#useremail-error
+    top: 60%
+    left: 35%
+
+@media (max-width: 705px)
+    div#username-error
+      top: 31%
+
+@media (max-width: 450px)
+  .call 
+    &__subtitle 
+      display: none
+
+  div#username-error
+    top: 26%
+  div#userphone-error
+    top: 41%
+  div#useremail-error
+    top: 56%

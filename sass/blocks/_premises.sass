@@ -1,5 +1,4 @@
 .premises
-  display: none
   animation: fadeIn 2s
   &-wrap 
     position: relative
@@ -36,3 +35,9 @@
     background-color: transparent
     z-index: 1
     cursor: pointer
+
+
+@media (max-width: 1150px)
+  .premises
+   &-wrap
+     max-width: 90%
