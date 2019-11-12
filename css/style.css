@@ -1042,7 +1042,7 @@ input.error:focus {
 @media (max-width: 440px) {
   .header-logo {
     top: 20%;
-    max-width: 250px;
+    max-width: 235px;
   }
 }
 
@@ -1874,5 +1874,92 @@ div#useremail-error {
     font-size: 18px;
     padding: 20px;
   }
+}
+
+.modal-menu {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+  z-index: 2;
+}
+
+.modal-menu_active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.modal-menu__close {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: 10px;
+  right: 10px;
+  font-size: 30px;
+  color: #02a2d0;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.9);
+  outline: none;
+  cursor: pointer;
+}
+
+.menu-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.menu-block {
+  width: 100%;
+  height: 100%;
+}
+
+.menu-nav {
+  width: 100%;
+  height: 100%;
+}
+
+.menu-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-size: 20px;
+  font-weight: 700;
+  list-style: none;
+  text-transform: uppercase;
+  margin-top: 0;
+}
+
+.menu-list__item {
+  position: relative;
+  padding: 10px;
+  margin-bottom: 20px;
+  margin-left: 40px;
+}
+
+.menu-list__item a {
+  color: #797979;
+  text-decoration: none;
+  padding: 10px;
 }
 /*# sourceMappingURL=style.css.map */
