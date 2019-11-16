@@ -35,9 +35,8 @@ function moveImages(){
         .pipe(dest('dist/img'));
 }
 
-exports.build = series(minifyСss, moveFonts, moveImages, minifyJS, minifyHtml);
+exports.build = series(minifyСss, moveImages, minifyJS, minifyHtml);
 exports.minifyJS = minifyJS;
 exports.minifyHtml = minifyHtml;
 exports.minifyСss = minifyСss;
-exports.moveFonts = moveFonts;
 exports.moveImages = moveImages;
