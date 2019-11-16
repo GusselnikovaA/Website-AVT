@@ -11,7 +11,6 @@ var useref = require('gulp-useref');
 function minifyСss() {
   return src('./src/css/*.css')
         .pipe(cleanCSS({compatibility: 'ie8'}))
-        // .pipe(rename({suffix:'.min'}))
         .pipe(dest('dist/css/'));
 }
 
@@ -28,12 +27,6 @@ function minifyHtml() {
         .pipe(useref())
         .pipe(htmlmin({collapseWhitespace: true }))
         .pipe(dest('dist/'));
-}
-
-
-function moveFonts() {
-  return src('./src/fonts/**/*')
-        .pipe(dest('dist/fonts'));
 }
 
 function moveImages(){
