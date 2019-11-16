@@ -428,6 +428,12 @@ input.error:focus {
           box-shadow: 0 0 5px #5f7c20;
 }
 
+@media (max-width: 1200px) {
+  .container {
+    max-width: 90%;
+  }
+}
+
 @media (max-width: 568px) {
   .section {
     padding: 30px 0;
@@ -1638,7 +1644,6 @@ div#useremail-error {
 .footer-list__item a {
   padding: 20px 0;
   color: #ffffff;
-  text-decoration: none;
   text-transform: uppercase;
 }
 
@@ -1658,7 +1663,14 @@ div#useremail-error {
   display: flex;
 }
 
-.footer__contacts a {
+.footer__phone {
+  display: block;
+  margin-top: 10px;
+  color: #9ccb37;
+  text-align: center;
+}
+
+.footer-contact__email {
   color: #ffffff;
   text-decoration: none;
 }
@@ -1683,22 +1695,64 @@ div#useremail-error {
   max-width: 250px;
 }
 
-.footer-company a {
-  color: #ffffff;
-  text-decoration: none;
-}
-
-.footer__phone {
-  display: inline-block;
-  margin-top: 10px;
-  color: #9ccb37;
-}
-
 .footer__icon {
   font-size: 16px;
   color: #9ccb37;
   margin-top: 16px;
   margin-right: 10px;
+}
+
+@media (max-width: 950px) {
+  .footer-nav {
+    display: none;
+  }
+  .footer-info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .footer-address__icon {
+    margin-right: 17px;
+  }
+  .footer__address {
+    margin-bottom: 0;
+  }
+  .footer__contacts {
+    margin: 0;
+  }
+}
+
+@media (max-width: 630px) {
+  .footer {
+    padding: 30px 0;
+  }
+  .footer-block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .footer-content {
+    width: 100%;
+  }
+  .footer-company {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+  }
+}
+
+@media (max-width: 400px) {
+  .footer-company__logo {
+    max-width: 200px;
+  }
+  .footer-contact__schedule {
+    display: none;
+  }
 }
 
 .catalog__title {

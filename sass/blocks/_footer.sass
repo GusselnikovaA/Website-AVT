@@ -29,7 +29,6 @@
       a 
         padding: 20px 0
         color: $light-color
-        text-decoration: none
         text-transform: uppercase
   &-info 
     display: flex
@@ -37,8 +36,13 @@
     line-height: 1.6
   &-address 
     display: flex
-  &__contacts 
-    a 
+  &__phone 
+    display: block
+    margin-top: 10px
+    color: $secondary-color
+    text-align: center
+  &-contact
+    &__email 
       color: $light-color
       text-decoration: none
   &-company 
@@ -48,18 +52,44 @@
     justify-content: center
     &__logo  
       max-width: 250px
-    a
-      color: $light-color
-      text-decoration: none
-  &__phone 
-    display: inline-block
-    margin-top: 10px
-    color: $secondary-color
   &__icon 
     font-size: 16px
     color: $secondary-color
     margin-top: 16px
     margin-right: 10px
 
+@media (max-width: 950px)
+  .footer
+    &-nav 
+      display: none
+    &-info 
+      flex-direction: column
+    &-address 
+      &__icon 
+        margin-right: 17px
+    &__address
+      margin-bottom: 0
+    &__contacts 
+      margin: 0
 
-  
+@media (max-width: 630px)
+  .footer 
+    padding: 30px 0
+    &-block 
+      flex-direction: column
+      align-items: center
+    &-content 
+      width: 100%
+    &-company 
+      order: -1
+
+@media (max-width: 400px)
+  .footer 
+    &-company 
+      &__logo 
+        max-width: 200px
+    &-contact
+      &__schedule
+        display: none
+    
+
