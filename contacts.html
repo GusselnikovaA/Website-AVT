@@ -17,10 +17,15 @@
 
 	<!-- ШАПКА САЙТА -->
 	<header class="header header-background">
-			<div class="header-logo">
-					<a href="index.html"><img src="img/header/header_logo.png" alt="Логотип компании"></a>
-				</div>
-		<div class="container header-container">
+		<div class="header-logo">
+			<a href="index.html"><img src="img/header/header_logo.png" alt="Логотип компании"></a>
+		</div>
+		<div class="header-icons">
+			<button class="header-icons__menu menu-alert"><span></span></button>
+			<a href="tel:8(812)244-65-10" class="header-icons__phone"><i class="fas fa-phone"></i></a>
+		</div>
+		<!-- /.header-icons -->
+		<div class="header-container">
 			<div class="header-wrap">
 				<div class="header-navbar">
 					<ul class="header-list">
@@ -47,6 +52,37 @@
 	</header>
 	<!-- /.header -->
 
+	<!-- МОДАЛЬНОЕ ОКНО МЕНЮ-->
+	<div class="modal-menu" id="modal-menu">
+		<div class="menu-container">
+			<div class="menu-block">
+				<button class="modal-menu__close menu-close">
+					<i class="fa fa-times"></i>
+				</button>
+				<div class="menu-nav">
+					<ul class="menu-list">
+						<li class="menu-list__item">
+							<a href="index.html">главная</a>
+						</li>
+						<li class="menu-list__item">
+							<a href="services.html">услуги</a>
+						</li>
+						<li class="menu-list__item">
+							<a href="catalog.html">каталог аренды</a>
+						</li>
+						<li class="menu-list__item">
+							<a href="contacts.html">контакты</a>
+						</li>
+					</ul>
+				</div>
+				<!-- /.menu-nav -->
+			</div>
+			<!-- /.menu-block -->
+		</div>
+		<!-- /.menu-container -->
+	</div>
+	<!-- /.modal-menu -->
+
 	<!-- КНОПКА ВВЕРХ В ПРАВОМ НЖНЕМ УГЛУ -->
 	<button class="up" id="up">
 		<i class="fa fa-angle-double-up"></i>
@@ -56,50 +92,52 @@
 		<!-- СЕКЦИЯ С КОНТАКТАМИ И КАРТОЙ -->
 		<section class="section contant">
 			<div class="container">
-        <h1 class="title contact__title">КОНТАКТЫ</h1>
-        <div class="contact-wrap">
-          <span class="text_bold">Группа компаний "АВТ Альянс-Финанс"</span>
-          <div class="contact-address">
-              <span class="contact__icon"><i class="fa fa-map-marker-alt"></i></span>
-              196105 Россия г. Санкт-Петербург, улица Бассейная дом 38 литер В
-          </div>
-          <!-- /.contact-address -->
-          <div class="contact-schedule">
-              <span class="contact__icon"><i class="fas fa-clock"></i></span>
-              Мы работаем по будням с 10.00 до 18.00
-          </div>
-          <!-- /.contact-schedule -->
-          <div class="contact-phone">
-              <span class="contact__icon"><i class="fas fa-phone"></i></span>
-              <a href="tel:8(812)244-65-10">8 (812) 244-65-10</a>
-          </div>
-          <!-- /.contact__phone -->
-          <div class="contact-email">
-              <span class="contact__icon"><i class="fas fa-envelope"></i></span>
-              <a href="mailto:info@avt-af.ru">info@avt-af.ru</a> <br>
-          </div>
+				<h1 class="title contact__title">КОНТАКТЫ</h1>
+				<div class="contact-wrap">
+					<span class="text_bold">Группа компаний "АВТ Альянс-Финанс"</span>
+					<div class="contact-address">
+						<span class="contact__icon"><i class="fa fa-map-marker-alt"></i></span>
+						196105 Россия г. Санкт-Петербург, улица Бассейная дом 38 литер В
+					</div>
+					<!-- /.contact-address -->
+					<div class="contact-schedule">
+						<span class="contact__icon"><i class="fas fa-clock"></i></span>
+						Мы работаем по будням с 10.00 до 18.00
+					</div>
+					<!-- /.contact-schedule -->
+					<div class="contact-phone">
+						<span class="contact__icon"><i class="fas fa-phone"></i></span>
+						<a href="tel:8(812)244-65-10">8 (812) 244-65-10</a>
+					</div>
+					<!-- /.contact__phone -->
+					<div class="contact-email">
+						<span class="contact__icon"><i class="fas fa-envelope"></i></span>
+						<a href="mailto:info@avt-af.ru">info@avt-af.ru</a> <br>
+					</div>
 					<!-- /.contact__email -->
 					<div class="contact-map">
-						<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A77eb8555111aafd2dbe921f4503a4c3827785e252fea4302bf6bdfa6aa6ad3df&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
+						<script async
+							src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A77eb8555111aafd2dbe921f4503a4c3827785e252fea4302bf6bdfa6aa6ad3df&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=true">
+						</script>
 					</div>
 					<!-- /.contact-map -->
-        </div>
+				</div>
 				<!-- /.contact-wrap -->
 			</div>
 			<!-- /.container -->
 		</section>
 		<!-- /.contact -->
 
-			<!-- ОКНО БЛАГОДАРНСТИ ПОСЛЕ ОТПРАВКИ ФОРМЫ -->
-	<div class="success" id="success">
-		<div class="success__content">
-			<button class="success__close" id="success-close">
-				<i class="fa fa-times"></i>
-			</button>
-			<h2 class="success__text">Спасибо за заявку!<br> Cкоро мы вам перезвоним</h2>
+		<!-- ОКНО БЛАГОДАРНСТИ ПОСЛЕ ОТПРАВКИ ФОРМЫ -->
+		<div class="success" id="success">
+			<div class="success__content">
+				<button class="success__close" id="success-close">
+					<i class="fa fa-times"></i>
+				</button>
+				<h2 class="success__text">Спасибо за заявку!<br> Cкоро мы вам перезвоним</h2>
+			</div>
 		</div>
-	</div>
-	<!-- /.success -->
+		<!-- /.success -->
 
 
 		<!-- СЕКЦИЯ С ФОРМОЙ ОБРАТНОЙ СВЯЗИ -->
@@ -130,8 +168,8 @@
 		<!-- /.section call -->
 	</main>
 
-<!-- ПОДВАЛ САЙТА -->
-<footer class="footer">
+	<!-- ПОДВАЛ САЙТА -->
+	<footer class="footer">
 		<div class="container">
 			<div class="footer-block">
 				<div class="footer-content">
@@ -170,19 +208,19 @@
 						</div>
 						<!-- /.footer-adress -->
 						<div class="footer-contact">
-							<p class="footer__contacts">
+							<div class="footer__contacts">
 								<div class="footer-contact__schedule">
-										<span class="footer__icon">
-												<i class="fas fa-clock"></i>
-											</span>
-										Работаем по будням с 10.00 до 18.00<br>
-									</div>
+									<span class="footer__icon">
+										<i class="fas fa-clock"></i>
+									</span>
+									Работаем по будням с 10.00 до 18.00<br>
+								</div>
 								<span class="footer__icon">
 									<i class="fas fa-envelope"></i>
 								</span>
 								<a href="mailto:info@avt-af.ru" class="footer-contact__email">info@avt-af.ru</a> <br>
 								<a href="tel:8(812)244-65-10" class="footer__phone text_big text_bold">8 (812) 244-65-10</a>
-							</p>
+							</div>
 						</div>
 						<!-- /.footer-contact -->
 					</div>
@@ -208,11 +246,16 @@
 	<!-- /.footer -->
 
 	<script src="js/jquery-3.4.1.min.js"></script>
+	<script src="js/modal-menu.js"></script>
+	<script src="js/up.js"></script>
 	<script src="js/validate.js"></script>
 	<script src="js/jquery.validate.min.js"></script>
 	<script src="js/jquery.maskedinput.min.js"></script>
-	<script src="js/up.js"></script>
-
+	<script src="js/wow.min.js"></script>
+	<script>
+		// Инициализация WOW.js
+		new WOW().init();
+	</script>
 </body>
 
 </html>

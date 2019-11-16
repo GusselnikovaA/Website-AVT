@@ -20,7 +20,12 @@
 		<div class="header-logo">
 			<a href="index.html"><img src="img/header/header_logo.png" alt="Логотип компании"></a>
 		</div>
-		<div class="container header-container">
+		<div class="header-icons">
+			<button class="header-icons__menu menu-alert"><span></span></button>
+			<a href="tel:8(812)244-65-10" class="header-icons__phone"><i class="fas fa-phone"></i></a>
+		</div>
+		<!-- /.header-icons -->
+		<div class="header-container">
 			<div class="header-wrap">
 				<div class="header-navbar">
 					<ul class="header-list">
@@ -46,6 +51,37 @@
 		<!-- /.container -->
 	</header>
 	<!-- /.header -->
+
+	<!-- МОДАЛЬНОЕ ОКНО МЕНЮ-->
+	<div class="modal-menu" id="modal-menu">
+		<div class="menu-container">
+			<div class="menu-block">
+				<button class="modal-menu__close menu-close">
+					<i class="fa fa-times"></i>
+				</button>
+				<div class="menu-nav">
+					<ul class="menu-list">
+						<li class="menu-list__item">
+							<a href="index.html">главная</a>
+						</li>
+						<li class="menu-list__item">
+							<a href="services.html">услуги</a>
+						</li>
+						<li class="menu-list__item">
+							<a href="catalog.html">каталог аренды</a>
+						</li>
+						<li class="menu-list__item">
+							<a href="contacts.html">контакты</a>
+						</li>
+					</ul>
+				</div>
+				<!-- /.menu-nav -->
+			</div>
+			<!-- /.menu-block -->
+		</div>
+		<!-- /.menu-container -->
+	</div>
+	<!-- /.modal-menu -->
 
 	<!-- КНОПКА ВВЕРХ В ПРАВОМ НЖНЕМ УГЛУ -->
 	<button class="up" id="up">
@@ -179,8 +215,8 @@
 		<!-- /.section call -->
 	</main>
 
-<!-- ПОДВАЛ САЙТА -->
-<footer class="footer">
+	<!-- ПОДВАЛ САЙТА -->
+	<footer class="footer">
 		<div class="container">
 			<div class="footer-block">
 				<div class="footer-content">
@@ -219,19 +255,19 @@
 						</div>
 						<!-- /.footer-adress -->
 						<div class="footer-contact">
-							<p class="footer__contacts">
+							<div class="footer__contacts">
 								<div class="footer-contact__schedule">
-										<span class="footer__icon">
-												<i class="fas fa-clock"></i>
-											</span>
-										Работаем по будням с 10.00 до 18.00<br>
-									</div>
+									<span class="footer__icon">
+										<i class="fas fa-clock"></i>
+									</span>
+									Работаем по будням с 10.00 до 18.00<br>
+								</div>
 								<span class="footer__icon">
 									<i class="fas fa-envelope"></i>
 								</span>
 								<a href="mailto:info@avt-af.ru" class="footer-contact__email">info@avt-af.ru</a> <br>
 								<a href="tel:8(812)244-65-10" class="footer__phone text_big text_bold">8 (812) 244-65-10</a>
-							</p>
+							</div>
 						</div>
 						<!-- /.footer-contact -->
 					</div>
@@ -257,10 +293,16 @@
 	<!-- /.footer -->
 
 	<script src="js/jquery-3.4.1.min.js"></script>
+	<script src="js/modal-menu.js"></script>
+	<script src="js/up.js"></script>
 	<script src="js/validate.js"></script>
 	<script src="js/jquery.validate.min.js"></script>
 	<script src="js/jquery.maskedinput.min.js"></script>
-	<script src="js/up.js"></script>
+	<script src="js/wow.min.js"></script>
+	<script>
+		// Инициализация WOW.js
+		new WOW().init();
+	</script>
 
 </body>
 
