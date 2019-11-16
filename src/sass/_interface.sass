@@ -1,0 +1,129 @@
+*
+  box-sizing: border-box
+
+body 
+  color: $text-color
+  font-family: "Roboto"
+  
+img
+  max-width: 100%
+
+a 
+  text-decoration: none
+
+.container
+  max-width: 1120px
+  margin: auto
+
+.section
+  padding: 55px 0
+  border-bottom: 1px dashed lighten($text-color, 30%)
+
+.title 
+  color: $main-color
+  font-size: 23px
+  text-align: center
+  text-transform: uppercase
+  font-weight: normal
+
+.text
+  &_bold 
+    font-weight: bold
+  &_big 
+    font-size: 23px
+
+.input
+  border: 1px solid lighten($text-color, 40%)
+  border-radius: 25px
+  padding: 19px 37px
+  font-size: 15px
+  outline: none
+  &:focus
+    box-shadow: 0 0 5px lighten($secondary-color, 10%)
+    border: 1px solid lighten($secondary-color, 10%)
+    border-radius: 25px
+
+input.error 
+  border: 1px solid $error-color
+  &:focus
+    box-shadow: 0 0 5px $error-color
+    border: 1px solid $error-color
+    border-radius: 25px
+
+.button
+  outline: none
+  border-radius: 25px
+  border: none 
+  padding: 19px 37px
+  font-size: 14px
+  font-weight: bold
+  text-transform: uppercase
+  &:hover
+    cursor: pointer
+    box-shadow: 0 0 5px darken($secondary-color, 20%)
+
+@media (max-width: 1200px)
+  .container
+    max-width: 90%
+
+@media (max-width: 568px)
+  .section 
+    padding: 30px 0
+
+// HOVER ЭФФЕКТЫ 
+@media (min-width: 992px)
+  a
+    &:hover 
+      cursor: pointer
+  .header
+    &-list
+      &__item 
+        &:hover 
+          background-color: lighten($main-color, 10%)
+    &-logo 
+      &:hover 
+        cursor: pointer
+    &-icons 
+      &__menu,&__phone 
+        &:hover 
+          opacity: 1
+
+  .premises 
+    &-card 
+      &:hover 
+        cursor: pointer
+        .premises__image
+          box-shadow: 0 25px 25px rgba(0, 0, 0, 0.1)
+          margin-top: -4px;
+          transition: 0.2s
+        .premises__subtitle 
+          font-weight: bold
+
+  .catalog 
+    &-card 
+      &:hover 
+        cursor: pointer
+        box-shadow: 0 25px 25px rgba(0, 0, 0, 0.1)
+        margin-top: -4px;
+        transition: 0.2s
+        .catalog__subtitle 
+          font-weight: bold
+  .call 
+    &__phone 
+      &:hover
+        color: $secondary-color
+
+  .rent 
+    &__close 
+      &:hover 
+        color: $secondary-color
+
+  .footer
+    &-list
+      &__item 
+        a 
+          &:hover 
+            color: saturate($secondary-color, 20%)
+            text-shadow: 2 2 2 lighten($text-color, 20%)
+
+        

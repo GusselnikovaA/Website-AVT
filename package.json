@@ -1,0 +1,23 @@
+{
+  "name": "Website-AVT",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GusselnikovaA/Website-AVT.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GusselnikovaA/Website-AVT/issues"
+  },
+  "homepage": "https://github.com/GusselnikovaA/Website-AVT#readme",
+  "dependencies": {
+    "gulp": "^4.0.2"
+  }
+}

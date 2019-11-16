@@ -1,0 +1,23 @@
+.up
+  position: fixed
+  right: 40px
+  bottom: 40px
+  width: 40px
+  height: 40px
+  border: none 
+  border-radius: 50%
+  background-color: $secondary-color
+  font-size: 25px
+  color: $light-color
+  opacity: .6
+  z-index: 9999
+  outline: none
+  &:hover
+    opacity: 1
+    cursor: pointer
+
+@media (max-width: 992px)
+  .up
+    &:hover
+      opacity: .6
+      cursor: default

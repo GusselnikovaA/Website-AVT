@@ -1,0 +1,117 @@
+.transition
+  transition: all 0.25s ease-in-out
+
+.flipIn
+  animation: flipdown 0.5s ease both
+    
+.no-select
+  -webkit-tap-highlight-color: rgba(0,0,0,0)
+  -webkit-touch-callout: none
+  -webkit-user-select: none
+  -khtml-user-select: none
+  -moz-user-select: none
+  -ms-user-select: none
+  user-select: none
+
+.services 
+  text-align: left
+  &__title 
+    margin-bottom: 30px
+  &__subtitle
+    color: $secondary-color
+    font-weight: bold
+    font-size: 18px
+    text-transform: uppercase
+  &-content 
+    max-width: 650px
+    margin: auto
+    text-align: justify
+  &__text 
+    position: relative
+    overflow: hidden
+    @extend .transition
+    opacity: 1
+    transform: translate( 0 , 0 )  
+    margin-top: 14px
+    z-index: 2
+    list-style: none
+    &__item 
+      display: flex
+      align-items: center
+      margin: 8px 0
+      // нстройка элементов списка (зеленые кружки)
+      &:before
+        content: "•"
+        font-size: 30px
+        color: $secondary-color
+        padding-right: 10px
+  &-list 
+    list-style: none
+    perspective: 900
+    padding: 0
+    margin: 0
+    &__item 
+      position: relative
+      padding: 0
+      margin: 0
+      padding-bottom: 4px
+      padding-top: 18px
+      border-top: 1px dashed lighten($text-color, 30%)
+      @extend .flipIn  
+      &:nth-of-type(1)
+        animation-delay: 0.5s
+      &:nth-of-type(2)
+        animation-delay: 0.75s 
+      &:nth-of-type(3)
+        animation-delay: 1.0s
+      &:nth-of-type(4)
+        animation-delay: 1.25s
+      &:last-of-type
+        padding-bottom: 0
+      // стрелки справа, вообще их наличие, элемент возле которого строится before и after 
+      i
+        position: absolute
+        transform: translate( -6px , 0 )
+        margin-top: 16px
+        right: 0
+        // стрелки справа, вообще их наличие
+        &:before , &:after
+          content: ""
+          @extend .transition
+          position: absolute
+          background-color: $secondary-color
+          width: 3px
+          height: 9px 
+        // стрелки их положение в обратную сторону левая сторона
+        &:before 
+          transform: translate( -2px , 0 ) rotate( 45deg ) 
+        // стрелки их положение в обратную сторону правая сторона   
+        &:after
+          transform: translate( 2px , 0 ) rotate( -45deg )
+      input[type=checkbox]
+        position: absolute
+        cursor: pointer
+        width: 100%
+        height: 100%
+        z-index: 1
+        opacity: 0
+        // Настройки изначаьно видимой гармошки(цвет заголовков, расположение стрелочек, скрытый контент)
+        &:checked
+          &~h2 
+            color: $text-color
+            font-weight: normal
+          &~ul
+            margin-top: 0
+            max-height: 0
+            opacity: 0
+            transform: translate( 0 , 50% )
+          &~i
+            &:before
+              transform: translate( 2px , 0 ) rotate( 45deg )
+            &:after
+              transform: translate( -2px , 0 ) rotate( -45deg )
+
+
+
+
+  
