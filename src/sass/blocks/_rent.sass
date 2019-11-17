@@ -6,6 +6,7 @@
   height: 100%
   background-color: rgba(#000, 0.5)
   display: none
+  overflow: scroll
   &_active
     display: flex
   &-container
@@ -28,6 +29,8 @@
     background-color: $light-color
     outline: none
     cursor: pointer
+  &-buttons 
+    display: flex
   &__link 
     padding: 15px 37px
     max-width: 250px
@@ -35,6 +38,25 @@
     border: none
     background-color: $secondary-color
     text-align: center
+    a 
+      text-decoration: none
+      color: $light-color
+  &__call 
+    display: flex 
+    justify-content: center 
+    align-items: center
+    font-size: 20px
+    color: $light-color
+    width: 40px
+    height: 40px
+    border: none 
+    border-radius: 50%
+    background-color: $secondary-color
+    color: $light-color
+    outline: none 
+    animation: phone .9s ease-in-out infinite
+    opacity: .8
+    cursor: pointer
     a 
       text-decoration: none
       color: $light-color
@@ -66,5 +88,32 @@
     z-index: 1
   &-info 
     margin: 15px 0
+    line-height: 1.2
+    &__subtitle 
+      color: $main-color
+    &__description 
+      margin-bottom: 10px
+
+@media (max-width: 830px)
+  .rent 
+    &-container
+      padding: 20px
+    &__image 
+      max-width: 400px
+      max-height: 300px
+
+@media (max-width: 586px)
+  .rent 
+    &__title 
+      margin-top: 0
+    &__image 
+      max-width: 300px
+      max-height: 200px
+
+@media (max-width: 420px)
+  .rent 
+    &__image 
+      max-width: 250px
+      max-height: 200px
 
   

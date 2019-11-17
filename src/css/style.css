@@ -1278,7 +1278,6 @@ input.error:focus {
       -ms-flex-pack: justify;
           justify-content: space-between;
   background-color: transparent;
-  z-index: 1;
   cursor: pointer;
 }
 
@@ -1896,6 +1895,7 @@ div#useremail-error {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   display: none;
+  overflow: scroll;
 }
 
 .rent_active {
@@ -1928,6 +1928,12 @@ div#useremail-error {
   cursor: pointer;
 }
 
+.rent-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .rent__link {
   padding: 15px 37px;
   max-width: 250px;
@@ -1938,6 +1944,36 @@ div#useremail-error {
 }
 
 .rent__link a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.rent__call {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 20px;
+  color: #ffffff;
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 50%;
+  background-color: #9ccb37;
+  color: #ffffff;
+  outline: none;
+  -webkit-animation: phone .9s ease-in-out infinite;
+          animation: phone .9s ease-in-out infinite;
+  opacity: .8;
+  cursor: pointer;
+}
+
+.rent__call a {
   text-decoration: none;
   color: #ffffff;
 }
@@ -1998,6 +2034,42 @@ div#useremail-error {
 
 .rent-info {
   margin: 15px 0;
+  line-height: 1.2;
+}
+
+.rent-info__subtitle {
+  color: #02a2d0;
+}
+
+.rent-info__description {
+  margin-bottom: 10px;
+}
+
+@media (max-width: 830px) {
+  .rent-container {
+    padding: 20px;
+  }
+  .rent__image {
+    max-width: 400px;
+    max-height: 300px;
+  }
+}
+
+@media (max-width: 586px) {
+  .rent__title {
+    margin-top: 0;
+  }
+  .rent__image {
+    max-width: 300px;
+    max-height: 200px;
+  }
+}
+
+@media (max-width: 420px) {
+  .rent__image {
+    max-width: 250px;
+    max-height: 200px;
+  }
 }
 
 .success {
@@ -2072,8 +2144,8 @@ div#useremail-error {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-animation: fadeIn 1s;
-          animation: fadeIn 1s;
+  -webkit-animation: fadeIn 0.5s;
+          animation: fadeIn 0.5s;
 }
 
 .modal-menu__close {
