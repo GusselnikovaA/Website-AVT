@@ -4,6 +4,7 @@ $(document).ready(function(){
   var close = $('#close');
 
   premise.on('click', function(){
+    $('#up').hide('slow');
     rent.addClass('rent_active');
     var target = $(this).attr('data-target');
     $.ajax({  
@@ -28,5 +29,6 @@ $(document).ready(function(){
   
   close.on('click', function(){
     rent.removeClass('rent_active');
+    $('#up').show('slow');
   });
 });

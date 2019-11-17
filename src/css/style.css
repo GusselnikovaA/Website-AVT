@@ -1585,6 +1585,16 @@ div#useremail-error {
           transform: translate(-2px, 0) rotate(-45deg);
 }
 
+@media (max-width: 420px) {
+  .services__subtitle {
+    text-align: left;
+  }
+  .services__text {
+    padding-left: 20px;
+    text-align: left;
+  }
+}
+
 .footer {
   background-color: #02a2d0;
   padding: 55px 0;
