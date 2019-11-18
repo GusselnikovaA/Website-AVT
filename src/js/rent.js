@@ -9,7 +9,7 @@ $(document).ready(function(){
     var target = $(this).attr('data-target');
     $.ajax({  
       url: target+".html",  
-      cache: false,  
+      // cache: false,  
       success: function(html){  
           $(".rent-wrap").html(html);  
           $('.rent-slider').slick({
@@ -19,12 +19,14 @@ $(document).ready(function(){
             prevArrow: $('.rent__arrows__left'),
             nextArrow: $('.rent__arrows__right'),
           });
-      }  
+      }
   });  
     // var target = $(this).attr('data-target');
     // $('.rent-wrap').load(target+".html");
     // location.reload();    //JavaScript функция перегрузки страницы
+    // $(".rent-slider").slick('reinit');
     // $('.rent-slider').slick('refresh');
+
   });
   
   close.on('click', function(){
