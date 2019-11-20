@@ -1585,7 +1585,7 @@ div#useremail-error {
           transform: translate(-2px, 0) rotate(-45deg);
 }
 
-@media (max-width: 420px) {
+@media (max-width: 568px) {
   .services__subtitle {
     text-align: left;
   }
@@ -2051,7 +2051,7 @@ div#useremail-error {
   color: #02a2d0;
 }
 
-.rent-info__description {
+.rent-info__description, .rent-info__number, .rent-info__square {
   margin-bottom: 10px;
 }
 

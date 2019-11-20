@@ -3,13 +3,14 @@ $(document).ready(function(){
   var rent = $('#rent');
   var close = $('#close');
 
-  premise.on('click', function(){
+  $(document).on('click', '.premise', function(){
     $('#up').hide('slow');
     rent.addClass('rent_active');
+    // $(".rent-slider").slick('reinit');
     var target = $(this).attr('data-target');
     $.ajax({  
-      url: target+".html",  
-      // cache: false,  
+      url: "rent/"+target+".html",  
+      cache: true,  
       success: function(html){  
           $(".rent-wrap").html(html);  
           $('.rent-slider').slick({
@@ -20,13 +21,16 @@ $(document).ready(function(){
             nextArrow: $('.rent__arrows__right'),
           });
       }
-  });  
+    });  
     // var target = $(this).attr('data-target');
     // $('.rent-wrap').load(target+".html");
     // location.reload();    //JavaScript функция перегрузки страницы
-    // $(".rent-slider").slick('reinit');
+    // rentSlider.slick('reinit');
     // $('.rent-slider').slick('refresh');
-
+    if ($(".rent-slider").hasClass('slick-initialized'))
+      $(".rent-slider").slick('setPosition');
+    else
+      initSlider(".rent-slider");
   });
   
   close.on('click', function(){
