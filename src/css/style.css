@@ -1951,18 +1951,28 @@ div#useremail-error {
 }
 
 .rent__link {
-  padding: 15px 37px;
   max-width: 250px;
   margin: auto;
   border: none;
-  background-color: #9ccb37;
   text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
 .rent__link a {
+  display: block;
+  border-radius: 25px;
   padding: 15px 37px;
+  background-color: #9ccb37;
   text-decoration: none;
   color: #ffffff;
+  font-size: 14px;
+}
+
+.rent__link a:hover {
+  cursor: pointer;
+  -webkit-box-shadow: 0 0 5px #5f7c20;
+          box-shadow: 0 0 5px #5f7c20;
 }
 
 .rent__call {

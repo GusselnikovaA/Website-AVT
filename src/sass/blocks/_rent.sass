@@ -32,16 +32,23 @@
   &-buttons 
     display: flex
   &__link 
-    padding: 15px 37px
     max-width: 250px
     margin: auto
     border: none
-    background-color: $secondary-color
     text-align: center
+    font-weight: bold
+    text-transform: uppercase
     a 
+      display: block
+      border-radius: 25px
       padding: 15px 37px
+      background-color: $secondary-color
       text-decoration: none
       color: $light-color
+      font-size: 14px
+      &:hover
+        cursor: pointer
+        box-shadow: 0 0 5px darken($secondary-color, 20%)
   &__call 
     display: flex 
     justify-content: center 

@@ -37,7 +37,7 @@
     var rent = $('#rent');
     var close = $('#close');
   
-    $(document).on('click', '.premise', function(){
+    premise.on('click', function(){
       $('#up').hide('slow');
       rent.addClass('rent_active');
       $(".rent-slider").slick('reinit');
@@ -47,7 +47,7 @@
         cache: false,  
         success: function(html){  
             $(".rent-wrap").html(html);  
-            var rentSlider = $('.rent-slider').slick({
+            $('.rent-slider').slick({
               slidesToShow: 1,
               slidesToScroll: 1,
               speed: 2000,
@@ -55,7 +55,7 @@
               prevArrow: $('.rent__arrows__left'),
               nextArrow: $('.rent__arrows__right'),
             });
-        rentSlider.slick('reinit');
+            $('.rent-slider').slick('reinit');
         }
       });  
     });
