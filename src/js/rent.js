@@ -51,6 +51,7 @@
               slidesToShow: 1,
               slidesToScroll: 1,
               speed: 2000,
+              accessibility: true,
               prevArrow: $('.rent__arrows__left'),
               nextArrow: $('.rent__arrows__right'),
             });
