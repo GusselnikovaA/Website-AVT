@@ -64,4 +64,11 @@
     rent.removeClass('rent_active');
     $('#up').show('slow');
   });
+
+  $(document).ready(function(){
+    rent.click(function(e){
+      if( ! $(e.target).closest(".rent-container").length)
+        rent.removeClass('rent_active');
+    });
+  });
 });
