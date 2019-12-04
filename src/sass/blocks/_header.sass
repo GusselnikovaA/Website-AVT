@@ -10,6 +10,7 @@
     background: rgba(0,0,0, 0.4)
     // top: 20%
     animation: fadeIn 2s
+    padding: 15px
   &-logo 
     // animation: fadeIn 2s
     // position: absolute
@@ -139,10 +140,8 @@
     &-list 
       &__item 
         font-size: 14px
-    &-logo 
-      max-width: 200px
-    &-icons
-      bottom: 25%
+    // &-icons
+    //   bottom: 25%
 
 @media (max-width: 780px)
   .header 
@@ -155,12 +154,12 @@
       &__item 
         a 
           padding: 5px 30px
-    &-icons
-      bottom: 30%
-      &__phone
-        font-size: 25px
-        width: 45px
-        height: 45px
+    // &-icons
+    //   bottom: 30%
+    //   &__phone
+    //     font-size: 25px
+    //     width: 45px
+    //     height: 45px
     // &-list 
     //   max-width: 100%
     //   justify-content: center
@@ -178,9 +177,6 @@
   .header 
     &-logo 
       max-width: 300px
-    // &-background
-    //   height: 200px
-    //   // background-image: none
     &-list 
       padding-left: 0
       &__item 
@@ -194,6 +190,9 @@
         display: flex
         opacity: 1
       &__phone 
+        font-size: 25px
+        width: 45px
+        height: 45px
         margin-top: 30px
         opacity: 1
     &-navbar 

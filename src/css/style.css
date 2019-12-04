@@ -813,6 +813,7 @@ input.error:focus {
   background: rgba(0, 0, 0, 0.4);
   -webkit-animation: fadeIn 2s;
           animation: fadeIn 2s;
+  padding: 15px;
 }
 
 .header-logo {
@@ -998,12 +999,6 @@ input.error:focus {
   .header-list__item {
     font-size: 14px;
   }
-  .header-logo {
-    max-width: 200px;
-  }
-  .header-icons {
-    bottom: 25%;
-  }
 }
 
 @media (max-width: 780px) {
@@ -1019,14 +1014,6 @@ input.error:focus {
   }
   .header-list__item a {
     padding: 5px 30px;
-  }
-  .header-icons {
-    bottom: 30%;
-  }
-  .header-icons__phone {
-    font-size: 25px;
-    width: 45px;
-    height: 45px;
   }
 }
 
@@ -1054,6 +1041,9 @@ input.error:focus {
     opacity: 1;
   }
   .header-icons__phone {
+    font-size: 25px;
+    width: 45px;
+    height: 45px;
     margin-top: 30px;
     opacity: 1;
   }
