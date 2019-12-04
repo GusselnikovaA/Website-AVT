@@ -76,6 +76,8 @@
   // Закрывает модальное окно
   close.on('click', function(){
     rent.removeClass('rent_active');
+    $('.rent-content').remove();
+    $('.rent-info').remove();
     $('#up').show('slow');
   });
 

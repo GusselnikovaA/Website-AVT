@@ -2,7 +2,8 @@
   box-sizing: border-box
 
 body 
-  color: $text-color
+  color: $light-color
+  // color: $text-color
   font-family: "Roboto"
   
 img
@@ -11,6 +12,9 @@ img
 a 
   text-decoration: none
 
+// .slick-list 
+//   width: 100%
+
 .container
   max-width: 1120px
   margin: auto
@@ -18,6 +22,7 @@ a
 .section
   padding: 55px 0
   border-bottom: 1px dashed lighten($text-color, 30%)
+  background-color: $background-color
 
 .title 
   color: $main-color
@@ -79,7 +84,8 @@ input.error
     &-list
       &__item 
         &:hover 
-          background-color: lighten($main-color, 10%)
+          // background-color: lighten($main-color, 10%)
+          background-color: darken($main-color, 10%)
     &-logo 
       &:hover 
         cursor: pointer
@@ -93,7 +99,8 @@ input.error
       &:hover 
         cursor: pointer
         .premises__image
-          box-shadow: 0 25px 25px rgba(0, 0, 0, 0.1)
+          // box-shadow: 0 25px 25px rgba(0, 0, 0, 0.1)
+          box-shadow: 0 25px 25px rgba(0, 0, 0, 0.3)
           margin-top: -4px;
           transition: 0.2s
         .premises__subtitle 
@@ -103,8 +110,10 @@ input.error
     &-card 
       &:hover 
         cursor: pointer
-        box-shadow: 0 25px 25px rgba(0, 0, 0, 0.1)
-        margin-top: -4px;
+        // box-shadow: 0 25px 25px rgba(0, 0, 0, 0.1)
+        box-shadow: 0 25px 25px rgba(0, 0, 0, 0.3)
+        margin-top: -4px
+        margin-bottom: 34px
         transition: 0.2s
         .catalog__subtitle 
           font-weight: bold
@@ -123,7 +132,8 @@ input.error
       &__item 
         a 
           &:hover 
-            color: saturate($secondary-color, 20%)
-            text-shadow: 2 2 2 lighten($text-color, 20%)
+            color: saturate($main-color, 50%)
+            // text-shadow: 2 2 2 lighten($text-color, 20%)
+            text-shadow: 0 6 6 rgba(0, 0, 0, 0.1)
 
         

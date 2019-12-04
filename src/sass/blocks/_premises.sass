@@ -25,16 +25,17 @@
     text-transform: uppercase
   &__text 
     text-align: center
-  &__arrows 
-    position: absolute
-    top: 49%
-    right: 0
-    left: 0
-    display: flex
-    justify-content: space-between
-    background-color: transparent
-    // z-index: -1
-    cursor: pointer
+  &__arrows
+    &_left 
+      left: 0
+      position: absolute
+      top: 49%
+      cursor: pointer
+    &_right
+      right: 0
+      position: absolute
+      top: 49%
+      cursor: pointer
 
 
 @media (max-width: 1150px)

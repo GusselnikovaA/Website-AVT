@@ -7,8 +7,8 @@ $(document).ready(function () {
     autoplay: true,
     autoplaySpeed: 3000,
     infinite: true,
-    prevArrow: $('.premises__arrows__left'),
-    nextArrow: $('.premises__arrows__right'),
+    prevArrow: $('.premises__arrows_left'),
+    nextArrow: $('.premises__arrows_right'),
     responsive: [
       {
       breakpoint: 768,
