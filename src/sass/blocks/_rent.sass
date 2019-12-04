@@ -6,7 +6,6 @@
   height: 100%
   background-color: rgba(#000, 0.5)
   display: none
-  overflow: scroll
   &_active
     display: flex
   &-container
@@ -31,6 +30,7 @@
     cursor: pointer
   &-buttons 
     display: flex
+    max-width: 650px
   &__link 
     max-width: 250px
     margin: auto
@@ -70,6 +70,7 @@
       color: $light-color
   &__title 
     text-transform: none
+    // margin-bottom: 30px
   &-content 
     position: relative
   &-slider 
@@ -95,10 +96,16 @@
     background-color: transparent
     z-index: 1
   &-info 
-    margin: 15px 0
+    // padding-top: 15px
+    // max-width: 650px
+    // margin: auto
     line-height: 1.2
     &__subtitle 
       color: $main-color
+      display: block
+      &:last-child 
+        margin-top: 10px
+        margin-right: 10px
     &__description, &__number, &__square 
       margin-bottom: 10px 
 

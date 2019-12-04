@@ -1911,7 +1911,6 @@ div#useremail-error {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   display: none;
-  overflow: scroll;
 }
 
 .rent_active {
@@ -1948,6 +1947,7 @@ div#useremail-error {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  max-width: 650px;
 }
 
 .rent__link {
@@ -2060,12 +2060,17 @@ div#useremail-error {
 }
 
 .rent-info {
-  margin: 15px 0;
   line-height: 1.2;
 }
 
 .rent-info__subtitle {
   color: #02a2d0;
+  display: block;
+}
+
+.rent-info__subtitle:last-child {
+  margin-top: 10px;
+  margin-right: 10px;
 }
 
 .rent-info__description, .rent-info__number, .rent-info__square {
