@@ -1217,11 +1217,6 @@ input.error:focus {
   }
 }
 
-.premises {
-  -webkit-animation: fadeIn 2s;
-          animation: fadeIn 2s;
-}
-
 .premises-wrap {
   position: relative;
 }
