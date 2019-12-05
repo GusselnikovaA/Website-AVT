@@ -3,7 +3,6 @@
 
 body 
   color: $light-color
-  // color: $text-color
   font-family: "Roboto"
   
 img
@@ -11,9 +10,6 @@ img
 
 a 
   text-decoration: none
-
-// .slick-list 
-//   width: 100%
 
 .container
   max-width: 1120px
@@ -65,7 +61,7 @@ input.error
   text-transform: uppercase
   &:hover
     cursor: pointer
-    box-shadow: 0 0 5px darken($secondary-color, 20%)
+    box-shadow: 0 0 15px darken($secondary-color, 20%)
 
 @media (max-width: 1200px)
   .container
@@ -84,8 +80,8 @@ input.error
     &-list
       &__item 
         &:hover 
-          // background-color: lighten($main-color, 10%)
           background-color: darken($main-color, 10%)
+          box-shadow: 0 0 15px darken($main-color, 10%)
     &-logo 
       &:hover 
         cursor: pointer
@@ -93,13 +89,13 @@ input.error
       &__menu,&__phone 
         &:hover 
           opacity: 1
+          box-shadow: 0 0 15px darken($secondary-color, 20%)
 
   .premises 
     &-card 
       &:hover 
         cursor: pointer
         .premises__image
-          // box-shadow: 0 25px 25px rgba(0, 0, 0, 0.1)
           box-shadow: 0 25px 25px rgba(0, 0, 0, 0.3)
           margin-top: -4px;
           transition: 0.2s
@@ -110,7 +106,6 @@ input.error
     &-card 
       &:hover 
         cursor: pointer
-        // box-shadow: 0 25px 25px rgba(0, 0, 0, 0.1)
         box-shadow: 0 25px 25px rgba(0, 0, 0, 0.3)
         margin-top: -4px
         margin-bottom: 34px
@@ -121,11 +116,18 @@ input.error
     &__phone 
       &:hover
         color: $secondary-color
+        text-shadow: 0 0 15px darken($secondary-color, 20%)
 
   .rent 
     &__close 
       &:hover 
         color: $secondary-color
+
+  .up
+    &:hover
+      opacity: 1
+      box-shadow: 0 0 15px darken($secondary-color, 10%)
+      cursor: pointer
 
   .footer
     &-list
@@ -133,7 +135,6 @@ input.error
         a 
           &:hover 
             color: saturate($main-color, 50%)
-            // text-shadow: 2 2 2 lighten($text-color, 20%)
-            text-shadow: 0 6 6 rgba(0, 0, 0, 0.1)
+
 
         

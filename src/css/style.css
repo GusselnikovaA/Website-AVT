@@ -425,8 +425,8 @@ input.error:focus {
 
 .button:hover {
   cursor: pointer;
-  -webkit-box-shadow: 0 0 5px #64a2ee;
-          box-shadow: 0 0 5px #64a2ee;
+  -webkit-box-shadow: 0 0 15px #64a2ee;
+          box-shadow: 0 0 15px #64a2ee;
 }
 
 @media (max-width: 1200px) {
@@ -447,12 +447,16 @@ input.error:focus {
   }
   .header-list__item:hover {
     background-color: #fc8007;
+    -webkit-box-shadow: 0 0 15px #fc8007;
+            box-shadow: 0 0 15px #fc8007;
   }
   .header-logo:hover {
     cursor: pointer;
   }
   .header-icons__menu:hover, .header-icons__phone:hover {
     opacity: 1;
+    -webkit-box-shadow: 0 0 15px #64a2ee;
+            box-shadow: 0 0 15px #64a2ee;
   }
   .premises-card:hover {
     cursor: pointer;
@@ -481,13 +485,19 @@ input.error:focus {
   }
   .call__phone:hover {
     color: #c0d9f8;
+    text-shadow: 0 0 15px #64a2ee;
   }
   .rent__close:hover {
     color: #c0d9f8;
   }
+  .up:hover {
+    opacity: 1;
+    -webkit-box-shadow: 0 0 15px #92bdf3;
+            box-shadow: 0 0 15px #92bdf3;
+    cursor: pointer;
+  }
   .footer-list__item a:hover {
     color: #ff9a37;
-    text-shadow: 0 6 6 rgba(0, 0, 0, 0.1);
   }
 }
 
@@ -1325,8 +1335,8 @@ input.error:focus {
 
 .call__button {
   width: 60%;
-  background-color: #fd9a39;
-  color: #ffffff;
+  background-color: #c0d9f8;
+  color: #3c363b;
   margin-bottom: 20px;
   -webkit-animation: pulse 2s;
           animation: pulse 2s;
@@ -1880,22 +1890,10 @@ div#useremail-error {
   border-radius: 50%;
   background-color: #c0d9f8;
   font-size: 25px;
-  color: #ffffff;
+  color: #3c363b;
   opacity: .6;
   z-index: 9999;
   outline: none;
-}
-
-.up:hover {
-  opacity: 1;
-  cursor: pointer;
-}
-
-@media (max-width: 992px) {
-  .up:hover {
-    opacity: .6;
-    cursor: default;
-  }
 }
 
 .rent {
@@ -2093,6 +2091,7 @@ div#useremail-error {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   display: none;
+  z-index: 2;
 }
 
 .success_active {
@@ -2129,6 +2128,7 @@ div#useremail-error {
   line-height: 1.4;
   padding: 52px;
   text-align: center;
+  color: #3c363b;
 }
 
 @media (max-width: 568px) {
